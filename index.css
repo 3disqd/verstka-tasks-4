@@ -1,285 +1,278 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Clicker+Script"
-        rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash"
-        rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Lobster"
-        rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway"
-        rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Fjalla+One"
-        rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Oswald:700"
-        rel="stylesheet" type="text/css">
-        <link rel="stylesheet" 
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesomemin.css">
-        <meta charset="utf-8">
-        <meta name="description" content="News magazine">
-        <meta name="keywords" content="Martin McFly">
-        <title>DeLorean DMC-12</title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <main>
-            <header>
-                <div class="date">
-                    <p class="weekday">Friday</p>
-                    <time datetime="2015-10-23">October 23, 2015</time>
-                </div>
-                <div class="name">
-                    <h1>old-fashioned newspaper</h1>
+html{
+	background-image: url(https://clck.ru/9bcuM);
+}
+body {
+	width: 1150px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
 
-                </div>
-                <div class="weather">
-                    <p>The Pogoda</p>
-                    <p class="degree">+1,9° <i class="fa fa-arrow-down"></i>
+}
+header{
+	width: 1150px;
+	height: 230px;
+}
+header div{
+	font-family: 'Fjalla One', sans-serif;
+	width: 200px;
+	border: double 5px #000;
+	padding: 10px;
+	height: 200px;
+	float: left;
+	text-align: center;
+}
+.date{
+	font-size: 30px;
+}
+.name{
+	font-family: 'Clicker Script', cursive;
+	text-transform: capitalize;
+	width: 670px;
+	font-size: 30px;
+	border: none;
+}
+.weather{
 
-                    </p>
-                    <p class="feeling">Feels Like −0,3°</p>
-                    <p class="more ">Cloudy</p>
-                    <p class=""><i class="fa fa-arrow-up"></i> Wind: 2 м/c, южный</p>
-                    <p class="pressure"><i class="fa fa-clock-o"></i> Pressure: 743 мм</p>
-                    <p class="wet"><i class="fa fa-tint"></i> Humidity: 76%</p>
-                </div>
-            </header>
-            <article class="quote">
-                <h3>Quote of the Day:</h3>
-                <i class="fa fa-quote-left fa-2x"></i>
-                <q>Get your facts first, then you can distort them as you please.</q>
-                <i class="fa fa-quote-right fa-2x"></i>
-                <p><a href="https://ru.wikipedia.org/wiki/Марк_Твен" rel="author">Mark Twain</a></p>
-            </article>
-            <article class="big news">
-                <h2>Youth jailed</h2>
-                <h3>Martin McFly Junior Arrested for Theif</h3>
-                <figure>
-                    <img src="https://clck.ru/9bbqE" alt="Martin McFly Junior Arrested for Theif">
-                    <figcaption>Martin McFly Junior Arrested for Theif</figcaption>
-                </figure>
-                <hr>
-                <h4>Youth gang denies complicity</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Similique neque ab repellendus quaerat, culpa aut quam veniam 
-                    minus temporibus dignissimos laboriosam, itaque blanditiis 
-                    sapiente eveniet! Sint eos perferendis soluta ipsum, illum modi
-                    nesciunt! Hic expedita eos eveniet minus, harum at, iste, cum 
-                    eaculpa architecto nam cumque excepturi quae iusto animi 
-                    aperiam audantium voluptatem? Illum omnis, et delectus harum 
-                    eos qui, quibusdam totam ea nobis porro incidunt placeat 
-                    molestiae. Debitis expedita, fuga, impedit quasi praesentium 
-                    repellendus harum, optio quia voluptate ex illum iure, ab.
-                </p> 
-                <a href="https://clck.ru/9bcrg">Marcus Tullius Cicero</a>
-            </article>
-            <article class="long news">
-                <h2>Jokes line</h2>
+	text-align: left;
+}
+.weather p{
+	line-height: 0.2;
+}
+.fa-arrow-down{
+	color: #00f
+}
+article{
+	height: auto;
+	padding: 10px;
+}
+.quote{
+	padding: 15px 10px;
+	width: 1120px;
+	border: dashed 5px #666;
+	font-size: 30px;
+	text-align: center;
+	line-height:0;
+}
+.quote:hover{
+	border: dotted 5px #ccc;
+}
+.quote h3{
+	text-align: left;
+	font-size: 18px;
+}
+.quote p{
+	text-align: right;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+a:hover{
+	cursor: pointer;
+}
+a:visited{
+	color: #000;
+	text-decoration: none;
+}
+.news:not(.long) p:first-letter{
+	font-family: 'Berkshire Swash', cursive;
+	color: red;
+	font-size: 200%;
+	line-height:0;
+}
+.news a:last-child{
+	float: right;
+}
+.news a:last-child::before{
+	content: "By ";
+}
+.fa-quote-left{
+	color: rgba(50, 50, 50, 0.2);
+	vertical-align: 15px;
+}
+.fa-quote-right{
+	color: rgba(50, 50, 50, 0.2);
+	vertical-align: -40px;
+}
+.quote q{
+	font-family: 'Lobster', cursive;
+	quotes: "" "";
+}
+.news{
+	float: left;
+}
+.big{
+	display: inline-block;
+	width: 880px;
+	border: solid 10px #f00;
+}
+h2{
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 4px;
+	margin: 0;
+}
+.fake h2,
+.big h2{
+	font-size: 60px;
+}
+h3{
+	text-transform: capitalize;
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-style: italic;
+	margin: 0;
+}
+.fake h3,
+.big h3{
+	font-size: 30px;
+}
+h4{
+	text-transform: capitalize;
+	font-size: 25px;
+	margin: 0;
+}
+figure{
+	float: left;
+	margin: 5px;
+	padding: 5px;
+	background-color: rgba(50, 50, 50, 0.2);
+	height: auto;
+}
+img{
+	width: 500px;
+}
+.big p{
+	-moz-column-count: 2; 
+    -webkit-column-count: 2; 
+    column-count: 2;
+}
+.long{
+	float: right;
+	width: 210px;
+}
+.smiles{
+	text-align: center;
+}
+.smiles span{
+	color: #00f;
+}
+.smiles span:first-child{
+	color: #0f0;
+}
+.smiles span:last-child{
+	color: #f00;
+}
+.short{
+	float: left;
+	width: 898px;
+	float: top;
+	border: solid 1px rgba(30, 30, 30, 0.1);
+}
+.short p{
+	-moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4;
+}
+.news q{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	display: block;
+	margin: 5px 0;
+	padding: 10px 5px;
+	quotes: "\00ab" "\00bb";
+	border-top: solid 1px rgba(30, 30, 30, 0.5);
+	border-bottom: solid 1px rgba(30, 30, 30, 0.5);
+}
+.hard{
+	width: 280px;
+}
+.hard img{
+	width: 240px;
+	float: right;
+}
+.hard h2{
+	float: left;
+	width: 1ch;
+	word-wrap: break-word;
+}
+.fake{
+	width: 820px;
+	border: solid 5px #a00;
+}
+.fake figure{
+	float: right;
+}
+footer{
+	width: 1150px;
+	height: 220px;
+  	overflow: hidden;
+  	text-align: right;
+  	border-top: solid 2px #000;
+}
+footer span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+  margin: -120px 0 0 0;
+  overflow: hidden;
+}
+footer div {
+  margin-top: -17%;
+  height: 34%; 
+  width: 2%;
+  top: 30%;
+  border-radius: 20px;
+  position: absolute;
+  color: #FFF;
+  font-size: 30px;
+  text-align: center;
+}
+footer div:nth-of-type(1)  { animation: wave 17s   0.000s linear infinite; }
+footer div:nth-of-type(2)  { animation: wave 17s -16.227s linear infinite; }
+footer div:nth-of-type(3)  { animation: wave 17s -15.455s linear infinite; }
+footer div:nth-of-type(4)  { animation: wave 17s -14.682s linear infinite; }
+footer div:nth-of-type(5)  { animation: wave 17s -13.909s linear infinite; }
+footer div:nth-of-type(6)  { animation: wave 17s -13.136s linear infinite; }
+footer div:nth-of-type(7)  { animation: wave 17s -12.364s linear infinite; }
+footer div:nth-of-type(8)  { animation: wave 17s -11.591s linear infinite; }
+footer div:nth-of-type(9)  { animation: wave 17s -10.818s linear infinite; }
+footer div:nth-of-type(10) { animation: wave 17s -10.045s linear infinite; }
+footer div:nth-of-type(11) { animation: wave 17s  -9.273s linear infinite; }
+footer div:nth-of-type(12) { animation: wave 17s  -8.500s linear infinite; }
+footer div:nth-of-type(13) { animation: wave 17s  -7.727s linear infinite; }
+footer div:nth-of-type(14) { animation: wave 17s  -6.955s linear infinite; }
+footer div:nth-of-type(15) { animation: wave 17s  -6.182s linear infinite; }
+footer div:nth-of-type(16) { animation: wave 17s  -5.409s linear infinite; }
+footer div:nth-of-type(17) { animation: wave 17s  -4.636s linear infinite; }
+footer div:nth-of-type(18) { animation: wave 17s  -3.864s linear infinite; }
+footer div:nth-of-type(19) { animation: wave 17s  -3.091s linear infinite; }
+footer div:nth-of-type(20) { animation: wave 17s  -2.318s linear infinite; }
+footer div:nth-of-type(21) { animation: wave 17s  -1.545s linear infinite; }
+footer div:nth-of-type(22) { animation: wave 17s  -0.773s linear infinite; }
 
-                <p>Just changed my Facebook name to ‘No one' so when I see stupid 
-                    posts I can click like and it will say ‘No one likes this'.</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>What's the difference between snowmen and snowladies? Snowballs</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>I am a nobody, nobody is perfect, therefore I am perfect.</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>How do you make holy water? You boil the hell out of it.</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>Why did the blonde get excited after finishing her puzzle in 6 months? 
-                -- The box said 2-4 years!</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>I once farted in an elevator, it was wrong on so many levels.</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>What do you call a bear with no teeth? -- A gummy bear!</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>If con is the opposite of pro, it must mean Congress is the opposite of progress?</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>I wondered why the frisbee was getting bigger, and then it hit me.</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>My mom never saw the irony in calling me a son-of-a-bitch.</p>
-                <p class="smiles">
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                    <span class="fa fa-smile-o"></span>
-                </p>
-                <p>If 4 out of 5 people SUFFER from diarrhea; does that mean that 
-                    one enjoys it?
-                </p>
-            </article>
-            <article class="short news">
-                <h2>Another amazing news</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Perferendis harum deserunt sunt expedita laborum cum esse 
-                    earum ullam, cupiditate ipsum quibusdam aperiam quidem iure 
-                    ratione culpa nulla ex rem vitae qui soluta distinctio iste, 
-                    mollitia numquam hic. Aperiam labore beatae provident quis 
-                    accusantium fugiat laborum cum nam necessitatibus! Eos 
-                    repellendus dolorum delectus accusantium nam repellat tenetur 
-                    illo et odit dolores voluptatem quae, quidem aliquid veritatis 
-                    non vero nostrum dolorem quam. Fuga quod quas quidem 
-                    voluptates! Voluptates sit commodi, deleniti alias repudiandae 
-                    sed delectus tempora eveniet est fuga harum totam, perferendis 
-                    nobis beatae aspernatur ex asperiores amet optio, tempore 
-                    expedita, earum cum! Voluptatem consequuntur dolor expedita, 
-                    veniam magni quod laboriosam culpa repellendus dolore velit 
-                    eos facilis inventore minus qui sapiente saepe ab sunt nobis 
-                    nam libero, ratione vitae laborum tempore beatae! Officia 
-                    omnis magnam impedit vero incidunt possimus qui earum fuga 
-                    suscipit sapiente dolorum accusamus dolores repellat enim eius 
-                    corrupti commodi, ipsam nulla doloremque. Accusamus 
-                    necessitatibus deserunt reiciendis maiores quis ab. <q>
-                    Doloremque, debitis libero, vitae aspernatur nihil animi iste 
-                    dolores aperiam consequatur rem iusto similique deleniti 
-                    voluptatem.</q> Quis ut adipisci sunt, rem et quasi cumque 
-                    esse nulla aliquid, error est ad id aspernatur, hic doloribus. 
-                    Ut, ullam, hic. Repellendus odio ex beatae. Placeat vitae 
-                    corporis eveniet labore non mollitia, debitis officia quisquam.
-                    Eligendi ut amet quam odio harum, tenetur mollitia officia 
-                    itaque saepe corporis pariatur excepturi repellendus, sapiente 
-                    minima, aut ratione adipisci a doloribus. Eveniet placeat 
-                    veritatis voluptatum saepe, perferendis totam aliquam dolores, 
-                    voluptates ut magni minus delectus nemo illum nobis ipsum hic 
-                    eligendi pariatur adipisci ad voluptate, error esse, modi quo 
-                    dolorem blanditiis. Harum ducimus voluptates, ipsam architecto 
-                    amet magni distinctio saepe, ratione unde vel totam accusamus 
-                    ab impedit aut deleniti enim molestias tempore quae sequi 
-                    libero error. Laudantium alias nesciunt porro animi dolore 
-                    odio labore, quam ea dignissimos, accusamus maxime. Quasi quas 
-                    facilis quos praesentium, dicta vero harum velit, cum nihil 
-                    molestiae modi, incidunt, saepe voluptatem repudiandae est 
-                    rem? Illum in quas, veritatis temporibus suscipit officiis 
-                    tempora autem, ratione, dicta omnis dolorum. Illum, quo 
-                    dolores reprehenderit dignissimos sunt debitis animi error, 
-                    fugit totam vitae maiores labore. Porro veritatis autem quia 
-                    sed sit, officiis eaque reiciendis magni similique doloribus 
-                    adipisci consequuntur id. Vitae sequi facilis, nisi quae amet 
-                    nam nobis atque recusandae. <q>Cupiditate eaque maxime eum, 
-                    voluptate aut ipsa, non minima laboriosam veniam recusandae 
-                    dolores sunt nobis. Nostrum dolorem qui similique, cupiditate 
-                    nobis eligendi.</q> Porro, unde, maiores! Excepturi, ea 
-                    dolorum maxime neque a. Doloremque molestias rerum 
-                    necessitatibus eaque vitae consectetur nobis dolores explicabo 
-                    dignissimos modi quaerat hic laboriosam quidem in, eum 
-                    molestiae quos! Sint possimus officiis dolores hic harum, eos 
-                    vero in dolor commodi voluptates amet omnis, error est. 
-                    Quisquam temporibus modi qui nostrum, provident libero 
-                    accusamus autem nisi ipsam placeat rerum adipisci, possimus 
-                    corporis officia?</p> 
-                <a href="https://clck.ru/9bcrg">Marcus Tullius Cicero</a>
-            </article>
-            <article class="hard news">
-                <h2>Go&#160;hard</h2>
-                <h3>Try to make it</h3>
-                <img src="https://clck.ru/9bcKx" alt="Sudoku">
-                <h3>another one</h3>
-                <img src="https://clck.ru/9bcsM" alt="Sudoku">
-                <h2>Go&#160;pro</h2>
-            </article>
-            <article class="fake news">
-                <h2>Gang jailed</h2>
-                <h3>Noverboard rampage destroys courthouse</h3>
-                <figure>
-                    <img src="https://clck.ru/9bcM5" alt="Noverboard rampage destroys courthouse">
-                    <figcaption>Noverboard rampage destroys courthouse</figcaption>
-                </figure>
-                <hr>
-                <h4>Gang leader: <q>I was framed.</q></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                    Sapiente, labore reprehenderit possimus tempora, mollitia 
-                    tenetur, autem cupiditate quod aperiam officia consequuntur. 
-                    Illo praesentium soluta molestiae rem harum nemo, sed qui 
-                    error sunt at alias consequatur ipsam necessitatibus, atque 
-                    doloribus minus modi adipisci iure provident nulla saepe 
-                    accusamus! Et, tempore, eum. Impedit tempore ullam accusantium 
-                    quo, nulla vel voluptates itaque. Nesciunt eveniet aliquam 
-                    adipisci consequatur sunt magni optio, iusto rem facere cumque 
-                    minus hic nihil error repudiandae similique, nostrum beatae, 
-                    ut ducimus facilis in debitis. Adipisci quia numquam placeat 
-                    excepturi voluptate dolore, iure, nulla eos natus quisquam 
-                    earum aliquid dolorum modi id, quas dolorem corrupti enim 
-                    animi officia accusantium quam doloremque nostrum. A odio 
-                    voluptates, ea deserunt accusantium officiis pariatur eum, 
-                    minus assumenda fugiat quas quidem esse quos maxime amet 
-                    doloremque tenetur cupiditate aliquid beatae earum. Doloribus 
-                    consectetur illo distinctio voluptatibus inventore! At nemo 
-                    provident hic libero laboriosam dolore ratione, molestias 
-                    tempore quaerat nihil. Ad architecto, dicta ut numquam 
-                    deserunt totam hic assumenda aliquam, esse atque ex harum quis 
-                    odio molestias maxime ullam enim nostrum amet labore 
-                    repudiandae deleniti obcaecati praesentium! Sequi incidunt 
-                    necessitatibus officia et inventore dolor voluptatibus 
-                    voluptatem exercitationem autem facilis repellendus 
-                    consequatur totam tenetur, culpa modi vel laboriosam. Libero 
-                    sed aut maiores doloribus! Ullam architecto magni molestias 
-                    repudiandae eos aperiam officia veritatis dicta sequi sit 
-                    consequatur ipsam odio quisquam excepturi aliquid maxime 
-                    distinctio consectetur adipisci, iusto placeat sapiente in! 
-                    Magni, ullam maiores!</p> 
-                <a href="https://clck.ru/9bcrg">Marcus Tullius Cicero</a>
-            </article>
-        </main>
-        <footer>2015 old-fashioned newspaper web-magazine &copy; никаких прав нет 
-            <span>
-                <div>R</div> 
-                <div>E</div>
-                <div>P</div>
-                <div>A</div>
-                <div>P</div>
-                <div>S</div>
-                <div>W</div>
-                <div>E</div>
-                <div>N</div>
-                <div>D</div>
-                <div>E</div>
-                <div>N</div>
-                <div>O</div>
-                <div>I</div>
-                <div>H</div>
-                <div>S</div>
-                <div>A</div>
-                <div>F</div>
-                <div>-</div>
-                <div>D</div>
-                <div>L</div>
-                <div>O</div>
-            </span>
-        </footer>
-    </body>
-</html>
+@keyframes wave {
+  0%   { left:-2%; background: #3B44D1; }
+  5%   { background: #9337FE; }
+  10%  { height:10%; margin-top: -5%; background: #C532FC; }
+  15%  { background: #F639F8; }
+  20%  { height:34%; margin-top:-17%; background: #F236C8; }
+  25%  { background: #FF2F8D; }
+  30%  { height:10%; margin-top: -5%; background: #EE3860; }
+  35%  { background: #DC5245; }
+  40%  { height:34%; margin-top:-17%; background: #F38643; }
+  45%  { background: #F8B435; }
+  50%  { height:10%; margin-top: -5%; background: #FAF444; }
+  55%  { background: #E0FF3B; }
+  60%  { height:34%; margin-top:-17%; background: #E1FF3C; }
+  65%  { background: #46F443; }
+  70%  { height:10%; margin-top: -5%; background: #54E67B; }
+  75%  { background: #4DF3A9; }
+  80%  { height:34%; margin-top:-17%; background: #3AF9DA; }
+  85%  { background: #36EBF4; }
+  90%  { height:10%; margin-top: -5%; background: #3DB3F3; }
+  95%  { background: #3C82F1; }
+  100% { height:34%; margin-top:-17%; left:100%; background: #5B38EE; }
+}
